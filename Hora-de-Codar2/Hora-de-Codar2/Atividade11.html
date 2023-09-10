@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade11</title>
+</head>
+<body>
+    
+    <Script>
+ 
+        var valor1 = parseFloat(prompt("Informe o primeiro valor: "));
+        var valor2 = parseFloat(prompt("Informe o segundo valor: "));
+        var operacao = parseInt(prompt("Escolha uma operação para realizar: \n1-Adição. \n2-Subtração. \n3-Divisão. \n4-Multiplicação."));
+        let calculo = 0;
+
+        if(operacao == 1){
+            calculo = (valor1 + valor2);
+            document.write("A soma dos valores é: " + calculo);
+        }
+        
+        else if(operacao == 2){
+            calculo = (valor1 - valor2);
+            document.write("A subtração dos valores é: " + calculo);
+        }
+
+        else if(operacao == 3){
+            calculo = (valor1 / valor2);
+            document.write("A divisão dos valores é: " + calculo);
+        }
+        
+        else if(operacao == 4){
+            calculo = (valor1 * valor2);
+            document.write("A multiplicação dos valores é: " + calculo);
+        }
+        
+        else{
+            alert("Opção inválida, escolha um número de 1 a 4.");
+        }
+
+    </Script>
+    
+</body>
+</html>

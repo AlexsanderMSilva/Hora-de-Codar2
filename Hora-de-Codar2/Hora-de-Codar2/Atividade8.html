@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade8</title>
+</head>
+<body>
+
+    <Script>
+    
+        let calcularMedia = 0;
+        for (let i = 0; i < 4; i++){
+
+            let numero = parseFloat(prompt("Digite o número: "));
+
+            if (numero < 0 || numero > 10){
+                numero = parseFloat(prompt("Número inválido. Digite um número entre 0 e 10: "));
+            }
+            calcularMedia = calcularMedia + numero;
+        }        
+        var media = calcularMedia / 4
+
+        if (media > 5){
+            alert("Você passou no teste!");
+            
+        }
+        
+        else{
+            alert("Tente novamente.");
+        } 
+        
+    </Script>
+
+   
+</body>
+</html>

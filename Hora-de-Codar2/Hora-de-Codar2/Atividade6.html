@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade6</title>
+</head>
+<body>
+
+   <script>
+
+        var valor1 = parseFloat(prompt("Informe o primeiro número: "));
+        var valor2 = parseFloat(prompt("Informe o segundo número: "));
+        var valor3 = parseFloat(prompt("Informe o terceiro número: "));
+        var valor4 = parseFloat(prompt("Informe o quarto número: "));
+        alert("O primeiro número é: " + valor1);
+        alert("O último número é: " + valor4);
+
+        if (valor1 > valor2 && valor1 > valor3 && valor1 > valor4){
+            alert("O maior número é: " + valor1);
+        }
+        else if(valor2 > valor1 && valor2 > valor3 && valor2 > valor4){
+            alert("O maior número é: " + valor2);
+        }
+        else if(valor3 > valor1 && valor3 > valor2 && valor3 > valor4){
+            alert("O maior número é: " + valor3);
+        }
+        else{
+            alert("O maior número é: " + valor4);
+        }
+
+   </script> 
+
+</body>
+</html>

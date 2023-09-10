@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade7</title>
+</head>
+<body>
+
+    <script>
+
+        let numerosInformados = [];
+        let somaNumeros = 0;
+        for (let i = 0; i < 6; i++) {
+
+            let valor = parseFloat(prompt("Digite um valor: "));
+            numerosInformados.push(valor);
+
+            if (valor < 72){
+                somaNumeros = somaNumeros + valor;
+            }
+        } 
+        document.write("Valores informados: " + numerosInformados.join(","));
+        document.write("<br>A soma dos números é: " + somaNumeros);
+        
+    </script>
+    
+</body>
+</html>

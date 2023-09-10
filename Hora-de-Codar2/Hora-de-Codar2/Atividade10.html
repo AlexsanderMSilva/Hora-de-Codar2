@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade10</title>
+</head>
+<body>
+    
+    <Script>
+        
+        var altura = parseFloat(prompt("Informe sua altura: "));
+        var sexo = parseInt(prompt("Como você se identifica ?\Feminino - 1 \Masculino - 2"));
+        let calculo = 0;
+        
+        if(sexo == 1){
+            calculo = (62.1 * altura) - 44.7;
+
+        }
+        
+        else if (sexo == 2){
+            calculo = (72.7 * altura) -  58;
+
+        }
+        
+        else{
+            alert("Informe um número entre 1 e 2.");
+        }
+        
+        document.write("O seu peso ideal é " + calculo.toFixed(2));
+
+    </Script>
+
+</body>
+</html>
